@@ -7,6 +7,15 @@ use Illuminate\Database\Eloquent\Model;
 
 class Order extends Model
 {
-    /** @use HasFactory<\Database\Factories\OrderFactory> */
     use HasFactory;
+
+    protected $fillable = [
+        'nome-cliente',
+        'email-cliente',
+        'nome-prodotto',
+        'quantita',
+        'descrizione',
+        'prezzo',
+        'spedito',
+    ];
 }

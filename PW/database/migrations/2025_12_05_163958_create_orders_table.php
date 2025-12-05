@@ -12,7 +12,7 @@ return new class extends Migration
             $table->id();
             $table->string('nome-cliente');
             $table->string('email-cliente');
-            $table->string('nome');
+            $table->string('nome-prodotto');
             $table->integer('quantita');
             $table->text('descrizione');
             $table->decimal('prezzo', 6, 2);

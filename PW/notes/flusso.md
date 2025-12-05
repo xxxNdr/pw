@@ -25,4 +25,4 @@ e a me non servono perché uso react
 
 ## CREA LA MIGRATION DELLA TABELLA ORDERS
 
-## 
+## MODIFICA IL MODEL ORDER
