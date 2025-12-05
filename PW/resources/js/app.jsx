@@ -1,8 +1,6 @@
-// importa libreria react principale
-import React from "react";
 // importa createRoot da react-dom/client per montare l'app
 import { createRoot } from "react-dom/client";
-// seleziona l'elemento html dal DOM in layouts/app.blade.php
+// seleziona l'elemento html dal DOM in welcome.blade.php
 createRoot(document.getElementById("app"))
     // con id app e sostituisci il contenuto con ↓
     .render(
