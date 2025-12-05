@@ -2,4 +2,4 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', fn() => view('home'))->name('home');
+Route::get('/{any}', fn() => view('home'))->where('any','.*');

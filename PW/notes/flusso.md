@@ -26,3 +26,7 @@ e a me non servono perché uso react
 ## CREA LA MIGRATION DELLA TABELLA ORDERS
 
 ## MODIFICA IL MODEL ORDER
+- Inserisci i fillable, le colonne che trovi nella relativa migration
+
+## CREA UN SINGOLA WEB ROUTE PER GLI UMANI
+## CREA APIRESOURCE ROUTE PER APP CHE CHIAMANO IL BACKEND
