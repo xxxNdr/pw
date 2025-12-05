@@ -22,3 +22,7 @@ e a me non servono perché uso react
     -   update() → modifica ordine
     -   destroy() → cancella ordine
 -   database/seeders/OrderSeeder.php → per riempire il DB con dati di esempio
+
+## CREA LA MIGRATION DELLA TABELLA ORDERS
+
+## 
