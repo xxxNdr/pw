@@ -1,0 +1,26 @@
+@keyframes pulse {
+    0% {
+        background-size: 120% 120%;
+    }
+    50% {
+        background-size: 300% 300%;
+    }
+    100% {
+        background-size: 120% 120%;
+    }
+}
+
+.anime {
+    background-image: radial-gradient(
+        at center,
+        rgba(167, 139, 250, 0.9) 0%,
+        rgba(255, 185, 205, 0.7) 50%,
+        rgba(54, 0, 41, 0.9) 100%
+    );
+
+    background-size: 120% 120%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    animation: pulse 5s ease-in-out infinite alternate;
+}
