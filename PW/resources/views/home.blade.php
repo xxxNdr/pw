@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Projet Work</title>
     {{-- collegamento laravel react/tailwind --}}
-    @vite(['resources/css/app.css', 'resources/js/app.jsx'])
+    @vite(['resources/js/index.jsx'])
 </head>
 
 <body class="bg-gray-100">
-    <div id="app"></div>
+    <div id="root"></div>
 </body>
 
 </html>

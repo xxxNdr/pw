@@ -16,8 +16,9 @@ export default defineConfig({
             input: [
                 // file css con tailwind 4
                 "resources/css/app.css",
+                "resources/css/stile.css",
                 // file principale react
-                "resources/js/app.jsx",
+                "resources/js/index.jsx",
             ],
             // abilita il refresh automatico quando modifico blade o route
             refresh: true,
