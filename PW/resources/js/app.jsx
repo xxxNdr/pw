@@ -1,22 +1,25 @@
-// importa createRoot da react-dom/client per montare l'app
-import { createRoot } from "react-dom/client";
-// importa un po' di css
-import "../css/stile.css";
-// seleziona l'elemento html dal DOM in welcome.blade.php
-createRoot(document.getElementById("app"))
-    // con id app e sostituisci il contenuto con ↓
-    .render(
-        /* div che occupa almeno tutta l'altezza dello schermo
-        gradiente da sx a dx */
-        <div className="min-h-screen anime flex items-center justify-center text-white">
-            {/* contenitore centrato per il testo */}
-            <div className="text-center">
-                <h1 className="text-9xl font-bold text-blue-500 filter drop-shadow-[0_4px_6px_rgb(0,0,0)]">
-                    Ciao
-                </h1>
-                <h3 className="text-2xl tracking-wider filter drop-shadow-[0_1px_1px_rgb(0,0,0)]">
-                    sono il Project Work
-                </h3>
-            </div>
-        </div>
-    );
+// CUORE DELL'APP REACT
+
+// BrowserRoute = abilita la navigazione SPA cambia URL senza refresh
+// Routes = il contenitore di tutte le rotte
+// Route = una singola rotta
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NavBar from "./components/NavBar";
+import Home from "./pages/Home";
+import Orders from "./pages/Orders";
+
+// componente principale dell'app esportato così react lo usa in index.jsx
+export default function App() {
+    // BrowserRouter deve avvolgere tutto quello che usa routing
+    <BrowserRouter>
+        {/* navbar sempre visibile a prescindere dalla route */}
+        <NavBar />
+        {/* qui react decide cosa mostrare in base all'URL */}
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/orders" element={<Orders />} />
+            {/* qualsiasi altro URL vai a home senza 404 */}
+            <Route path="*" element={<Home />} />
+        </Routes>
+    </BrowserRouter>;
+}
